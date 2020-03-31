@@ -1,6 +1,9 @@
 import Vue from 'vue'
+import axios from 'axios'
 import App from './App'
-import router from './router'
+
+Vue.prototype.$eventBus = new Vue()
+Vue.prototype.$axios = axios
 
 // eslint-disable-next-line no-new
 new Vue({
@@ -8,6 +11,5 @@ new Vue({
   components: {
     App
   },
-  template: '<App />',
-  router
+  template: '<App />'
 })

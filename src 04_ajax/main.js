@@ -1,6 +1,8 @@
 import Vue from 'vue'
+import VueResource from 'vue-resource'
 import App from './App'
-import router from './router'
+
+Vue.use(VueResource)
 
 // eslint-disable-next-line no-new
 new Vue({
@@ -8,6 +10,5 @@ new Vue({
   components: {
     App
   },
-  template: '<App />',
-  router
+  template: '<App />'
 })

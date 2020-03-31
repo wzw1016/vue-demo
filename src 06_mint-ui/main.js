@@ -1,6 +1,9 @@
 import Vue from 'vue'
+import { Button, Popup } from 'mint-ui'
 import App from './App'
-import router from './router'
+
+Vue.component(Button.name, Button)
+Vue.component(Popup.name, Popup)
 
 // eslint-disable-next-line no-new
 new Vue({
@@ -8,6 +11,5 @@ new Vue({
   components: {
     App
   },
-  template: '<App />',
-  router
+  template: '<App />'
 })
